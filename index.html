@@ -9,6 +9,10 @@
       background-color: black;
       color: white;
     }
+    .enviar,
+    .again:hover {
+      cursor: pointer;
+    }
     </style>
     <meta charset="utf-8"/>
   </head>
@@ -17,8 +21,8 @@
     <p>
       ¿Cuántas líneas quieres?
       <input type="text" id="texto_lineas"/>
-      <input type="button" value="Enviar" id="botoncito"/>
-      <input type="button" value="Otra vez!" onclick="window.location.reload()">
+      <input class="enviar" type="button" value="Enviar" id="botoncito"/>
+      <input class="again" type="button" value="Otra vez!" onclick="window.location.reload()">
     </p>
         <canvas width="300" height="300" id="dibujito"></canvas>
         <script src="code.js"></script>
